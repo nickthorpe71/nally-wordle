@@ -20,6 +20,7 @@ const Guess: FC<GuessProps> = ({ isGuessed, guess, word }) => {
 
                 return (
                     <div
+                        key={`guess--${i}`}
                         className={`flex h-16 w-16 items-center justify-center border border-gray-400 font-bold uppercase text-white ${bgColor}`}
                     >
                         {guess[i]}
